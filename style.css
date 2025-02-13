@@ -1,0 +1,199 @@
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: url('bg-2.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            margin-top: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: transparent;
+            filter: drop-shadow(10px);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo{
+            position:fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            backdrop-filter: blur(1px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem 5%;
+        }
+        
+
+        .chakra-container {
+            width: 75px;
+            height: 75px;
+            position: relative;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .chakra-container img {
+            width: 100%;
+            height: 100%;
+            animation: rotate 5s linear infinite, glow 1.5s ease-in-out infinite alternate;
+        }
+.chakra-container a{
+            font-size: 1.8rem;
+            position: relative;
+            color: rgb(255, 255, 255);
+            margin: 4.5rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .chakra-container a:hover,
+        .chakra-container a:active{
+            color: #4bb0b7;
+            border-bottom:3px solid #40ced3;
+        }
+        
+        .name {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: red;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: 'Playfair Display';
+            text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 5px rgb(218, 185, 0)); }
+            to { filter: drop-shadow(0 0 5px rgb(218, 185, 0)); }
+        }
+
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
+        }
+
+        .home-content h1 {
+            font-size: 6rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .home-content h3 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .home-img{
+            border-radius: 40%;
+        }
+        .home-img img{
+            position: relative;
+            height: 450px;
+            width: 350px;
+            border-radius:50%;
+            box-shadow: 0 0 25px solid;
+            cursor: pointer;
+            transition: 0.2s linear;
+        }
+        .home-img img:hover{
+            font-size: 1.8rem;
+            font-weight: 500;
+        
+        }
+
+        .typing-text span::before {
+            content: "Software Developer";
+            color: #19a3c5;
+            animation: words 20s infinite;
+        }
+        .social-icons a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            background-color: transparent;
+            border: 0.2rem solid #19a3c5;
+            font-size: 2rem;
+            border-radius: 50%;
+            margin: 3rem 1.5rem 3rem 0;
+            transition: 0.5s ease;
+            color: #19a3c5;
+        }
+        
+        .social-icons a:hover{
+            color: black;
+            transform: scale(1.3) translateY(-5px);
+            background-color: #19a3c5;
+            box-shadow: 0 0 25px #19a3c5;
+        }
+        
+        .btn{
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            border-radius: 4rem;
+            font-size: 1.6rem;
+            color: #19a3c5;
+            letter-spacing: 0.3rem;
+            font-weight: 600;
+            border: 2px solid #19a3c5;
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+        
+        .btn:hover{
+            transform: scale(1.3) translateY(-5px);
+            background-color: #19a3c5;
+            color: black;
+            box-shadow: 0 0 25px #19a3c5;
+        }
+        @keyframes words {
+            0%, 20% { content: "Web Developer"; }
+            21%, 40% { content: "Software Developer"; }
+            41%, 60% { content: "Full Stack Developer"; }
+            61%, 80% { content: "Youtuber"; }
+            81%, 100% { content: "Freelancer"; }
+        }
